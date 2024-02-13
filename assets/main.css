@@ -1,0 +1,94 @@
+@font-face {
+  font-display: block;
+  font-family: bootstrap-icons;
+  src: url("fonts/bootstrap-icons.woff2") format("woff2"),
+    url("fonts/bootstrap-icons.woff") format("woff");
+}
+/*woff2?dd67030699838ea613ee6dbda90effa6*/
+.bi::before,
+[class*=" bi-"]::before,
+[class^="bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(242, 240, 240);
+}
+#container {
+  background: #0f0f0f;
+  height: 100px;
+  text-align: center;
+}
+#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo h1 {
+  padding: 10px;
+  color: white;
+  font-size: 2.5em;
+}
+.yellow {
+  color: rgb(20, 36, 213);
+}
+#menu a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  background: rgb(20, 36, 213);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#postagens {
+  background: url("./imagens/Campo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
+  height: 420px;
+}
+#postagens h2 {
+  color: #689f38;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.busca {
+  text-align: center;
+  width: 30%;
+  float: right;
+}
+.busca input {
+  padding: 8px;
+  border-radius: 2px;
+  width: 190px;
+  margin-top: 10px;
+  border: none;
+  min-width: 200px;
+}
+.col-100 {
+  width: 100%;
+  float: left;
+  position: relative;
+}
